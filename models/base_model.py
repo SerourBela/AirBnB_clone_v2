@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """ This file is for the baseModel for the airbnb clone"""
 import uuid
 from datetime import datetime
@@ -28,3 +29,10 @@ class BaseModel:
                 mydict[key] = value
         mydict["__class__"] = self.__class__.__name__
         return mydict
+
+    def __str__(self):
+        """
+        str funtion 
+        """
+        csname = self.__class__.__name__
+        return "[{}] ({}) {}".format(csname, self.id, self.__dict__)
