@@ -1,2 +1,1 @@
-# AirBnB_clone
-AirBnB_clone
+*** this readme file is for the air bnb Project for alx ***
